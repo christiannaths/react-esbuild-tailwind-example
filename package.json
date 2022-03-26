@@ -1,0 +1,25 @@
+{
+  "name": "esbuild-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build --watch & yarn serve",
+    "build": "node esbuild.config.js",
+    "serve": "node scripts/dev-server.js"
+  },
+  "devDependencies": {
+    "@deanc/esbuild-plugin-postcss": "^1.0.2",
+    "autoprefixer": "^10.4.4",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.14.28",
+    "live-server": "^1.2.1",
+    "postcss-import": "^14.1.0",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
